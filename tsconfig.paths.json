@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@libs/common": [
+        "libs/common/src"
+      ],
+      "@libs/common/*": [
+        "libs/common/src/*"
+      ],
+      "@libs/dao": [
+        "libs/dao/src"
+      ],
+      "@libs/dao/*": [
+        "libs/dao/src/*"
+      ],
+      "@extension/": [
+        "libs/common/src/extension"
+      ],
+      "@extension/*": [
+        "libs/common/src/extension/*"
+      ]
+    }
+  }
+}

@@ -1,8 +1,12 @@
 import { NestFactory } from '@nestjs/core';
 import { AuthModule } from './auth.module';
+import { AuthServer } from './auth.server';
 
-async function bootstrap() {
+async function authServer(): Promise<void> {
   const app = await NestFactory.create(AuthModule);
-  await app.listen(3000);
+
+  const authServer = new AuthServer(app);
+  authServer.init();
+  await authServer.run();
 }
-bootstrap();
+void authServer();

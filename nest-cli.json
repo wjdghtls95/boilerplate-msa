@@ -36,6 +36,15 @@
       "compilerOptions": {
         "tsConfigPath": "libs/common/tsconfig.lib.json"
       }
+    },
+    "dao": {
+      "type": "library",
+      "root": "libs/dao",
+      "entryFile": "index",
+      "sourceRoot": "libs/dao/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/dao/tsconfig.lib.json"
+      }
     }
   }
 }
